@@ -1,5 +1,5 @@
 <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="w-full px-4 py-4 flex justify-between items-center">
         <!-- Logo or Branding -->
         <div class="flex items-center">
             <a href="{{ url('/') }}" class="flex items-center space-x-2">
@@ -35,3 +35,17 @@
         </nav>
     </div>
 </header>
+
+<!-- jQuery Script -->
+<script src="{{ asset('js/jquery.js') }}"></script>
+<script>
+    $(document).ready(function() {
+        $('#menu-button').on('click', function() {
+            $('#mobile-menu').slideToggle(500); 
+        });
+
+        $('#mobile-menu a').on('click', function() {
+            $('#mobile-menu').slideUp(500); n
+        });
+    });
+</script>

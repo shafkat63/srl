@@ -16,16 +16,15 @@
 
         <!-- Main Content -->
         <div class="flex-grow">
-            <div class="container mx-auto py-8">
+            <div class="w-full py-8 px-4">
                 @yield('mainContent')
-                <h1>fff</h1>
             </div>
         </div>
         <!-- End Main Content -->
 
         <!-- Footer -->
-        <footer class="bg-white shadow-md">
-            <div class="container mx-auto py-4 flex justify-between items-center">
+        <footer class="bg-white shadow-md w-full">
+            <div class="w-full py-4 px-4 flex justify-between items-center">
                 <span class="text-gray-600">&copy; System Resources Ltd. 2024</span>
                 <span class="text-gray-600">
                     Maintained by <a href="https://srl.com.bd/" target="_blank" class="text-blue-500 hover:text-blue-700">System Resources Ltd</a>
