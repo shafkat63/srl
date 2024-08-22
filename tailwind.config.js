@@ -45,6 +45,7 @@ export default {
             },
           },
         },
+        
         animation: {
           zoomIn: 'zoomIn 1.5s ease-out',
           slideInUp: 'slideInUp 1.5s ease-out',

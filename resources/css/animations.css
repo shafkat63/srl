@@ -1,0 +1,120 @@
+/* animations.css */
+@keyframes heroImage {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes heroTitle {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroSubtitle {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroButton {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aboutImage {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes aboutText {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aboutButton {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes contactItem {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-heroImage {
+    animation: heroImage 1s ease-out forwards;
+}
+
+.animate-heroTitle {
+    animation: heroTitle 1s ease-out forwards;
+}
+
+.animate-heroSubtitle {
+    animation: heroSubtitle 1s ease-out forwards;
+}
+
+.animate-heroButton {
+    animation: heroButton 1s ease-out forwards;
+}
+
+.animate-aboutImage {
+    animation: aboutImage 1s ease-out forwards;
+}
+
+.animate-aboutText {
+    animation: aboutText 1s ease-out forwards;
+}
+
+.animate-aboutButton {
+    animation: aboutButton 1s ease-out forwards;
+}
+
+.animate-contactItem {
+    animation: contactItem 1s ease-out forwards;
+}

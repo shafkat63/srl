@@ -18,7 +18,7 @@
         <div class="flex-grow">
             <div class="container mx-auto py-8">
                 @yield('mainContent')
-               
+                <h1>fff</h1>
             </div>
         </div>
         <!-- End Main Content -->

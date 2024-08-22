@@ -14,25 +14,26 @@
             <a href="/services" class="px-6 py-3 bg-slate-700 text-white font-semibold rounded-lg shadow-lg hover:bg-slate-900 transition duration-300 mb-3 animate-slideInUp">Get Started</a>
         </div>
     </section>
-<!-- Who We Are Section -->
-<section id="who-we-are" class="py-16 bg-gray-100">
-    <div class="container mx-auto text-center px-4 md:px-8 lg:px-16">
-        <h2 class="text-4xl font-bold text-gray-800 mb-6 opacity-0 translate-y-10">Who We Are</h2>
-        <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
-            <div class="md:w-1/2 opacity-0 translate-x-10">
-                <img src="/about.jpg" alt="about" class="rounded-lg shadow-lg">
-            </div>
-            <div class="md:w-1/2 text-left opacity-0 translate-x-10">
-                <p class="text-lg text-gray-600 mb-8">
-                    System Resources Limited (SRL) specializes in developing business application software, database management, web-based applications, mobile apps, IT facilities management, IT communication and network solutions, IT audit, and project management.
-                </p>
-                <a href="/about" class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
-                    Read More
-                </a>
+
+    <!-- Who We Are Section -->
+    <section id="who-we-are" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center px-4 md:px-8 lg:px-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6 opacity-0 translate-y-10">Who We Are</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
+                <div class="md:w-1/2 opacity-0 translate-x-10">
+                    <img src="/about.jpg" alt="about" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 text-left opacity-0 translate-x-10">
+                    <p class="text-lg text-gray-600 mb-8">
+                        System Resources Limited (SRL) specializes in developing business application software, database management, web-based applications, mobile apps, IT facilities management, IT communication and network solutions, IT audit, and project management.
+                    </p>
+                    <a href="/about" class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+                        Read More
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Our Clients Section -->
     <section class="py-16">
@@ -93,7 +94,7 @@
 @section('scripts')
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const sections = document.querySelectorAll('#who-we-are h2, #who-we-are .md:w-1/2');
+        const sections = document.querySelectorAll('#who-we-are h2, #who-we-are .md\\:w-1\\/2');
 
         const options = {
             root: null, // viewport
