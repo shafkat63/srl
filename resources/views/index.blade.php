@@ -12,12 +12,13 @@
 <body class="bg-gray-100 text-gray-900">
     <div class="min-h-screen flex flex-col">
         <!-- Main Navigation -->
-        @yield('mainNav')
+        @include('partials.header')
 
         <!-- Main Content -->
         <div class="flex-grow">
             <div class="container mx-auto py-8">
                 @yield('mainContent')
+                <h1>fff</h1>
             </div>
         </div>
         <!-- End Main Content -->
@@ -32,7 +33,6 @@
             </div>
         </footer>
     </div>
-
 
     @yield('scripts')
 </body>
