@@ -5,6 +5,26 @@
 
 
 
+.service-card {
+    position: relative;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.service-card:hover {
+    transform: scale(2);
+    z-index: 10;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    background-color: #f3f4f6;
+    color: #4b5563;
+}
 
 /* Fade In Animation */
 @keyframes fadeIn {
