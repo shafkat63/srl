@@ -190,4 +190,34 @@
     });
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sections = document.querySelectorAll('#who-we-are h2, #who-we-are .md\\:w-1\\/2');
+
+        const options = {
+            root: null, // viewport
+            rootMargin: '0px',
+            threshold: 0.1 // trigger when 10% of the element is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    if (target.tagName === 'H2') {
+                        target.classList.add('fadeIn');
+                    } else {
+                        target.classList.add('slideInLeft'); // Apply different classes based on the target
+                    }
+                    observer.unobserve(target); // Stop observing after animation
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+</script>
+
 @endsection
