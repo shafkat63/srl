@@ -38,4 +38,39 @@
         </div>
     </form>
 </div>
+
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+        <!-- Address -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Address</h3>
+            <p class="text-gray-700">4, Chamilibagh, Shantinagar<br>Dhaka - 1217, Bangladesh.</p>
+        </div>
+
+        <!-- Call Us -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Call Us</h3>
+            <p class="text-gray-700">+8802 4831 5559<br>+88 096 78 777 117</p>
+        </div>
+
+        <!-- Email Us -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Email Us</h3>
+            <p class="text-gray-700">info@srl.com.bd<br>srlspprt@yahoo.com</p>
+        </div>
+
+        <!-- Open Hours -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Open Hours</h3>
+            <p class="text-gray-700">Sunday - Thursday<br>9:00 AM - 06:00 PM</p>
+        </div>
+
+        <!-- Affiliation and Certification -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Affiliation and Certification</h3>
+            <p class="text-gray-700">Details about affiliations and certifications can be placed here.</p>
+        </div>
+    </div>
+</section>
+
 @endsection

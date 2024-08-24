@@ -15,3 +15,6 @@ Route::get('/services', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
+Route::get('/profile', function () {
+    return view('pages.company_profile');
+});

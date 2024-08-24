@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 /* Fade In Animation */
 @keyframes fadeIn {
     from {
