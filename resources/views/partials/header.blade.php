@@ -16,6 +16,7 @@
             <a href="{{ url('/services') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('services') ? 'glow' : '' }}">Our Services</a>
             <a href="{{ url('/contact') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('contact') ? 'glow' : '' }}">Contact</a>
             <a href="{{ url('/profile') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('profile') ? 'glow' : '' }}">Company Profile</a>
+            <a href="{{ url('/portfolio') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('portfolio') ? 'glow' : '' }}">Portfolio</a>
         </nav>
 
         <!-- Mobile Menu Button -->
@@ -33,6 +34,7 @@
             <a href="{{ url('/about') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('about') ? 'glow' : '' }}">About</a>
             <a href="{{ url('/services') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('services') ? 'glow' : '' }}">Our Services</a>
             <a href="{{ url('/profile') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('profile') ? 'glow' : '' }}">Company Profile</a>
+            <a href="{{ url('/portfolio') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('portfolio') ? 'glow' : '' }}">Portfolio</a>
         </nav>
     </div>
 </header>

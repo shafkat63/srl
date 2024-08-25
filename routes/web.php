@@ -18,3 +18,6 @@ Route::get('/contact', function () {
 Route::get('/profile', function () {
     return view('pages.company_profile');
 });
+Route::get('/portfolio', function () {
+    return view('pages.portfolio');
+});
