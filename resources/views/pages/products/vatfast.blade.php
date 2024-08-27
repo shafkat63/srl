@@ -81,8 +81,7 @@
             <li>Mushak 6.1 - Purchase Register</li>
             <li>Mushak 6.2 - Goods/Service Sales</li>
             <li>Mushak 6.2.1 - Purchase & Sales Register for Trading & Service</li>
-            <li>VAT Challan or Service Bill</li>
-            <li>Mushak 6.3</li>
+            <li>Mushak 6.3 - VAT Challan or Service Bill</li>
             <li>Mushak 6.4 - Issue Subcontract</li>
             <li>Mushak 6.5 - Stock Transfer</li>
             <li>Mushak 6.6 - VAT at source deduction certificate</li>
