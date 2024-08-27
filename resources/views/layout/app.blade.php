@@ -62,9 +62,37 @@
                 </span>
             </div>
         </footer>
+
+        <!-- Go to Top Button -->
+        <button id="goToTop" class="fixed  bottom-4 right-4 bg-blue-600 text-white p-3 rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
+            <i class="fas fa-chevron-up"></i>
+        </button>
     </div>
 
     @yield('scripts')
+
+    <!-- Go to Top Button Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const goToTopButton = document.getElementById('goToTop');
+            
+            // Show or hide the button based on scroll position
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    goToTopButton.classList.remove('opacity-0');
+                    goToTopButton.classList.add('opacity-100');
+                } else {
+                    goToTopButton.classList.remove('opacity-100');
+                    goToTopButton.classList.add('opacity-0');
+                }
+            });
+
+            // Smooth scroll to top
+            goToTopButton.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
 
 </html>
