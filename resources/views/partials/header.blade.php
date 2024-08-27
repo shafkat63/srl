@@ -1,54 +1,131 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
     <div class="w-full px-4 py-4 flex justify-between items-center">
         <!-- Logo or Branding -->
         <div class="flex items-center">
             <a href="{{ url('/') }}" class="flex items-center space-x-2">
-                <span class="text-2xl font-bold text-gray-800 hover:text-blue-500">
-                    <img src="/logo2.png" alt="srl" class="h-8 w-auto">
-                </span>
+                <img src="/logo2.png" alt="srl" class="h-8 w-auto">
             </a>
         </div>
 
         <!-- Navigation Links -->
         <nav class="space-x-6 hidden md:flex">
-            <a href="{{ url('/') }}" class="text-gray-600 hover:text-cyan-600 transition duration-300 {{ Request::is('/') ? 'glow' : '' }}">Home</a>
-            <a href="{{ url('/about') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('about') ? 'glow' : '' }}">About</a>
-            <a href="{{ url('/services') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('services') ? 'glow' : '' }}">Our Services</a>
-            <a href="{{ url('/contact') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('contact') ? 'glow' : '' }}">Contact</a>
-            <a href="{{ url('/profile') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('profile') ? 'glow' : '' }}">Company Profile</a>
-            <a href="{{ url('/portfolio') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('portfolio') ? 'glow' : '' }}">Portfolio</a>
+            <a href="{{ url('/') }}"
+                class="text-gray-600 hover:text-cyan-600 transition duration-300 {{ Request::is('/') ? 'glow' : '' }}">Home</a>
+            <a href="{{ url('/about') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('about') ? 'glow' : '' }}">About</a>
+            <a href="{{ url('/services') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('services') ? 'glow' : '' }}">Our
+                Services</a>
+            <a href="{{ url('/contact') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('contact') ? 'glow' : '' }}">Contact</a>
+                <div class="relative group">
+                    <button class="flex items-center text-gray-600 hover:text-blue-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 px-4 py-2 bg-gray-100 rounded-md shadow-md hover:bg-gray-200 {{ Request::is('products*') ? 'glow' : '' }}">
+                        Products
+                        <i class="fas fa-chevron-down ml-2"></i>
+                    </button>
+                    <!-- Dropdown -->
+                    <div class="absolute right-0 mt-2 bg-white shadow-lg rounded-md hidden group-hover:block">
+                        <a href="{{ url('/products/vatfast') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline hover:scale-105 transition duration-300 ease-in-out">Vat Fast</a>
+                        <a href="{{ url('/products/2') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline hover:scale-105 transition duration-300 ease-in-out">Product 2</a>
+                        <a href="{{ url('/products/3') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline hover:scale-105 transition duration-300 ease-in-out">Product 3</a>
+                    </div>
+                </div>
+                
+
+
+
+            <a href="{{ url('/profile') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('profile') ? 'glow' : '' }}">Company
+                Profile</a>
+            <a href="{{ url('/portfolio') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('portfolio') ? 'glow' : '' }}">Portfolio</a>
+            <a href="{{ url('/techStack') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('techStack') ? 'glow' : '' }}">Tech
+                Stack</a>
+
         </nav>
 
         <!-- Mobile Menu Button -->
         <button class="md:hidden text-gray-600 hover:text-blue-500 focus:outline-none" id="menu-button">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </button>
     </div>
 
     <!-- Mobile Menu -->
-    <div class="md:hidden fixed inset-0 bg-white shadow-md z-50 hidden" id="mobile-menu">
+    <div id="mobile-menu"
+        class="md:hidden fixed inset-0 bg-white shadow-md z-50 transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="flex justify-end p-4">
+            <button id="close-menu" class="text-gray-600 hover:text-blue-500 focus:outline-none">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
         <nav class="flex flex-col items-center py-4 space-y-4">
-            <a href="{{ url('/') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('/') ? 'glow' : '' }}">Home</a>
-            <a href="{{ url('/about') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('about') ? 'glow' : '' }}">About</a>
-            <a href="{{ url('/services') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('services') ? 'glow' : '' }}">Our Services</a>
-            <a href="{{ url('/profile') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('profile') ? 'glow' : '' }}">Company Profile</a>
-            <a href="{{ url('/portfolio') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('portfolio') ? 'glow' : '' }}">Portfolio</a>
+            <a href="{{ url('/') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('/') ? 'glow' : '' }}">Home</a>
+            <a href="{{ url('/about') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('about') ? 'glow' : '' }}">About</a>
+            <a href="{{ url('/services') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('services') ? 'glow' : '' }}">Our
+                Services</a>
+            <a href="{{ url('/contact') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('contact') ? 'glow' : '' }}">Contact</a>
+                <div class="relative group">
+                    <button class="flex items-center text-gray-600 hover:text-blue-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 px-4 py-2 bg-gray-100 rounded-md shadow-md hover:bg-gray-200 {{ Request::is('products*') ? 'glow' : '' }}">
+                        Products
+                        <i class="fas fa-chevron-down ml-2"></i>
+                    </button>
+                    <!-- Dropdown -->
+                    <div class="absolute right-0 mt-2 bg-white shadow-lg rounded-md hidden group-hover:block">
+                        <a href="{{ url('/products/vatfast') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline hover:scale-105 transition duration-300 ease-in-out">Vat Fast</a>
+                        <a href="{{ url('/products/2') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline hover:scale-105 transition duration-300 ease-in-out">Product 2</a>
+                        <a href="{{ url('/products/3') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline hover:scale-105 transition duration-300 ease-in-out">Product 3</a>
+                    </div>
+                </div>
+
+            <a href="{{ url('/profile') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('profile') ? 'glow' : '' }}">Company
+                Profile</a>
+            <a href="{{ url('/portfolio') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('portfolio') ? 'glow' : '' }}">Portfolio</a>
+            <a href="{{ url('/techStack') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('techStack') ? 'glow' : '' }}">Tech
+                Stack</a>
+
         </nav>
     </div>
 </header>
 
-<!-- jQuery Script -->
-<script src="{{ asset('js/jquery.js') }}"></script>
+
+<!-- JavaScript -->
 <script>
-    $(document).ready(function() {
-        $('#menu-button').on('click', function() {
-            $('#mobile-menu').slideToggle(500); 
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeButton = document.getElementById('close-menu');
+
+        // Open mobile menu
+        menuButton.addEventListener('click', function () {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
         });
 
-        $('#mobile-menu a').on('click', function() {
-            $('#mobile-menu').slideUp(500); n
+        // Close mobile menu
+        closeButton.addEventListener('click', function () {
+            mobileMenu.classList.remove('translate-x-0');
+            mobileMenu.classList.add('translate-x-full');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function () {
+                mobileMenu.classList.remove('translate-x-0');
+                mobileMenu.classList.add('translate-x-full');
+            });
         });
     });
 </script>

@@ -121,17 +121,6 @@
             <p class="text-gray-700">Details about affiliations and certifications can be placed here.</p>
         </div>
 
-        <!-- Newsletter -->
-        <div class="bg-white p-8 rounded-lg shadow-lg col-span-1 md:col-span-2 lg:col-span-4">
-            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Newsletter</h3>
-            <p class="text-gray-700 mb-4">Subscribe to our newsletter for the latest updates and news.</p>
-            <form action="#" method="post" class="flex flex-col">
-                <input type="email" name="email" placeholder="Enter your email"
-                    class="px-4 py-2 border rounded-md w-full mb-4">
-                <button type="submit"
-                    class="w-full px-6 py-3 bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-800 transition duration-300">Subscribe</button>
-            </form>
-        </div>
     </div>
 </section>
 @endsection

@@ -21,3 +21,9 @@ Route::get('/profile', function () {
 Route::get('/portfolio', function () {
     return view('pages.portfolio');
 });
+Route::get('/techStack', function () {
+    return view('pages.technologyStacks');
+});
+Route::get('/products/vatfast', function () {
+    return view('pages.products.vatfast');
+});

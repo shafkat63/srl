@@ -47,6 +47,7 @@
                     <a href="/services" class="text-sm text-blue-500 hover:text-blue-700 transition">Services</a>
                     <a href="/about" class="text-sm text-blue-500 hover:text-blue-700 transition">About Us</a>
                     <a href="/contact" class="text-sm text-blue-500 hover:text-blue-700 transition">Contact</a>
+                    <a href="/techStack" class="text-sm text-blue-500 hover:text-blue-700 transition">techStack</a>
                 </div>
             </div>
         </footer>
