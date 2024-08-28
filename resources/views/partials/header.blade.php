@@ -11,25 +11,38 @@
 
         <!-- Navigation Links -->
         <nav class="space-x-6 hidden md:flex">
-            <a href="{{ url('/') }}" class="text-gray-600 hover:text-cyan-600 transition duration-300 {{ Request::is('/') ? 'glow' : '' }}">Home</a>
-            <a href="{{ url('/about') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('about') ? 'glow' : '' }}">About</a>
-            <a href="{{ url('/services') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('services') ? 'glow' : '' }}">Our Services</a>
-            <a href="{{ url('/contact') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('contact') ? 'glow' : '' }}">Contact</a>
+            <a href="{{ url('/') }}"
+                class="text-gray-600 hover:text-cyan-600 transition duration-300 {{ Request::is('/') ? 'glow' : '' }}">Home</a>
+            <a href="{{ url('/about') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('about') ? 'glow' : '' }}">About</a>
+            <a href="{{ url('/services') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('services') ? 'glow' : '' }}">Our
+                Services</a>
+            <a href="{{ url('/contact') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('contact') ? 'glow' : '' }}">Contact</a>
+            
+            <!-- Dropdown -->
             <div class="relative group">
-                <button id="dropdownButton" class="flex items-center text-gray-600 hover:text-blue-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 px-4 py-2 bg-gray-100 rounded-md shadow-md hover:bg-gray-200 {{ Request::is('products*') ? 'glow' : '' }}">
+                <button class="flex items-center text-gray-600 hover:text-blue-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 px-4 py-2 bg-gray-100 rounded-md shadow-md hover:bg-gray-200 {{ Request::is('products*') ? 'glow' : '' }}">
                     Products
                     <i class="fas fa-chevron-down ml-2"></i>
                 </button>
-                <!-- Dropdown -->
-                <div id="dropdownMenu" class="absolute right-0 mt-2 bg-white shadow-lg rounded-md opacity-0 transition-opacity duration-200 ease-in-out pointer-events-none">
-                    <a href="{{ url('/products/vatfast') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline hover:scale-105 transition duration-200 ease-in-out">VATFast</a>
-                    <a href="{{ url('/products/2') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline hover:scale-105 transition duration-200 ease-in-out">Product 2</a>
-                    <a href="{{ url('/products/3') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline hover:scale-105 transition duration-200 ease-in-out">Product 3</a>
+                <!-- Dropdown Menu -->
+                <div class="absolute right-0 mt-2 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out transform scale-95 group-hover:scale-100 pointer-events-auto">
+                    <a href="{{ url('/products/vatfast') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Vat Fast</a>
+                    <a href="{{ url('/products/2') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Product 2</a>
+                    <a href="{{ url('/products/3') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Product 3</a>
                 </div>
             </div>
-            <a href="{{ url('/profile') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('profile') ? 'glow' : '' }}">Company Profile</a>
-            <a href="{{ url('/portfolio') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('portfolio') ? 'glow' : '' }}">Portfolio</a>
-            <a href="{{ url('/techStack') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('techStack') ? 'glow' : '' }}">Tech Stack</a>
+
+            <a href="{{ url('/profile') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('profile') ? 'glow' : '' }}">Company
+                Profile</a>
+            <a href="{{ url('/portfolio') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('portfolio') ? 'glow' : '' }}">Portfolio</a>
+            <a href="{{ url('/techStack') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('techStack') ? 'glow' : '' }}">Tech
+                Stack</a>
         </nav>
 
         <!-- Mobile Menu Button -->
@@ -48,25 +61,38 @@
             </button>
         </div>
         <nav class="flex flex-col items-center py-4 space-y-4">
-            <a href="{{ url('/') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('/') ? 'glow' : '' }}">Home</a>
-            <a href="{{ url('/about') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('about') ? 'glow' : '' }}">About</a>
-            <a href="{{ url('/services') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('services') ? 'glow' : '' }}">Our Services</a>
-            <a href="{{ url('/contact') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('contact') ? 'glow' : '' }}">Contact</a>
+            <a href="{{ url('/') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('/') ? 'glow' : '' }}">Home</a>
+            <a href="{{ url('/about') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('about') ? 'glow' : '' }}">About</a>
+            <a href="{{ url('/services') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('services') ? 'glow' : '' }}">Our
+                Services</a>
+            <a href="{{ url('/contact') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('contact') ? 'glow' : '' }}">Contact</a>
+            
+            <!-- Dropdown -->
             <div class="relative group">
-                <button id="mobileDropdownButton" class="flex items-center text-gray-600 hover:text-blue-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 px-4 py-2 bg-gray-100 rounded-md shadow-md hover:bg-gray-200 {{ Request::is('products*') ? 'glow' : '' }}">
+                <button class="flex items-center text-gray-600 hover:text-blue-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 px-4 py-2 bg-gray-100 rounded-md shadow-md hover:bg-gray-200 {{ Request::is('products*') ? 'glow' : '' }}">
                     Products
                     <i class="fas fa-chevron-down ml-2"></i>
                 </button>
-                <!-- Dropdown -->
-                <div id="mobileDropdownMenu" class="absolute right-0 mt-2 bg-white shadow-lg rounded-md opacity-0 transition-opacity duration-200 ease-in-out pointer-events-none">
-                    <a href="{{ url('/products/vatfast') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline hover:scale-105 transition duration-200 ease-in-out">VATFast</a>
-                    <a href="{{ url('/products/2') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline hover:scale-105 transition duration-200 ease-in-out">Product 2</a>
-                    <a href="{{ url('/products/3') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline hover:scale-105 transition duration-200 ease-in-out">Product 3</a>
+                <!-- Dropdown Menu -->
+                <div class="absolute right-0 mt-2 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out transform scale-95 group-hover:scale-100 pointer-events-auto">
+                    <a href="{{ url('/products/vatfast') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Vat Fast</a>
+                    <a href="{{ url('/products/2') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Product 2</a>
+                    <a href="{{ url('/products/3') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Product 3</a>
                 </div>
             </div>
-            <a href="{{ url('/profile') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('profile') ? 'glow' : '' }}">Company Profile</a>
-            <a href="{{ url('/portfolio') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('portfolio') ? 'glow' : '' }}">Portfolio</a>
-            <a href="{{ url('/techStack') }}" class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('techStack') ? 'glow' : '' }}">Tech Stack</a>
+
+            <a href="{{ url('/profile') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('profile') ? 'glow' : '' }}">Company
+                Profile</a>
+            <a href="{{ url('/portfolio') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('portfolio') ? 'glow' : '' }}">Portfolio</a>
+            <a href="{{ url('/techStack') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('techStack') ? 'glow' : '' }}">Tech
+                Stack</a>
         </nav>
     </div>
 </header>
