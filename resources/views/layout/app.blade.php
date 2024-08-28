@@ -12,7 +12,8 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+
     <!-- Tailwind CSS -->
     @vite('resources/css/app.css')
 
@@ -40,7 +41,8 @@
                     <p class="text-sm text-gray-800 leading-relaxed">
                         A sound management team comprising professionals endowed with proven ability in IT management
                         focuses on appropriate human resources development and professionalism, placing SRL as a trusted
-                        and result-oriented lead solution firm.
+                        and result-oriented lead solution firm. <i class="fi fi-sr-target-audience text-blue-500 text-3xl"></i>
+
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row items-center sm:space-x-6 text-gray-600 text-center sm:text-right w-full sm:w-auto">
@@ -97,3 +99,6 @@
 </body>
 
 </html>
+
+
+

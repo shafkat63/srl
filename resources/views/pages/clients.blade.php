@@ -9,33 +9,36 @@
 
     <!-- Description -->
     <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
-        Domain knowledge on Power sector Utility billing including KPI, Human Resources Management, Inventory Management empowered SRL professionals in the development of appropriate software solutions matching the requirements of its clients.
+        Domain knowledge on Power sector Utility billing, including KPI, Human Resources Management, and Inventory Management, empowers SRL professionals in developing appropriate software solutions that match the requirements of its clients.
     </p>
 
     <!-- Client Grid -->
     <div id="clients" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Client cards will be appended here by JavaScript -->
+        <!-- Client cards will be dynamically inserted here -->
     </div>
-    
 </div>
 @endsection
 
 @section('scripts')
 <script type="module">
-    import { clients } from '/js/clients.js'; // Ensure correct path to the JS file
+    import { clients } from '/js/clients.js'; // Ensure this path is correct
 
-    $(document).ready(function() {
-        const clientsContainer = $('#clients');
+    document.addEventListener('DOMContentLoaded', function() {
+        const clientsContainer = document.getElementById('clients');
 
+        // Generate client cards dynamically
         Object.values(clients).forEach(client => {
-            const clientDiv = `
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl hover:transform hover:scale-105 transition duration-300 ease-in-out">
-                    <h2 class="text-xl font-semibold text-gray-800 mb-4">
-                        <i class="fa-solid fa-hotel mr-2 text-blue-600"></i>${client}
-                        </h2>
-                </div>
+            const clientDiv = document.createElement('div');
+            clientDiv.className = 'bg-white shadow-lg rounded-lg p-6 hover:shadow-xl hover:transform hover:scale-105 transition duration-300 ease-in-out';
+            
+            clientDiv.innerHTML = `
+                <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                  <i class="fa-solid fa-hotel mr-2 text-blue-600"></i>
+                    ${client}
+                </h2>
             `;
-            clientsContainer.append(clientDiv);
+
+            clientsContainer.appendChild(clientDiv);
         });
     });
 </script>
