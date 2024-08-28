@@ -21,7 +21,7 @@
 
         <!-- Tech Item 2 -->
         <div class="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg border border-gray-200">
-            <i class="fas fa-css3-alt text-4xl text-blue-500 mb-4"></i>
+            <i class="fa-brands fa-css3-alt text-4xl text-blue-500 mb-4"></i>
             <h2 class="text-xl font-semibold text-gray-800 mb-2">CSS</h2>
             <p class="text-gray-600">Cascading Style Sheets</p>
         </div>
@@ -105,7 +105,7 @@
 
         <!-- Tech Item 14 -->
         <div class="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg border border-gray-200">
-            <i class="fab fa-flutter text-4xl text-blue-400 mb-4"></i>
+            <i class="fa-brands fa-flutter text-4xl text-blue-400 mb-4"></i>
             <h2 class="text-xl font-semibold text-gray-800 mb-2">Flutter</h2>
             <p class="text-gray-600">UI Toolkit for Mobile</p>
         </div>

@@ -2,7 +2,7 @@
 
 @section('mainContent')
 <div class="bg-gray-100 py-12 px-6">
-    <div class="mb-8">
+    <div class="container mx-auto p-6 " >
         <h1 class="text-3xl font-bold text-blue-800 mb-4">Features and Benefits of VAT Management Software (VATFast)</h1>
         <p class="text-lg text-gray-700 leading-relaxed mb-4">
             VATFast is a web-based VAT solution developed by System Resources Ltd. (SRL). The software is developed in full compliance with the requirements of the National Board of Revenue (NBR) and is NBR-approved.
@@ -12,7 +12,7 @@
         </p>
     </div>
 
-    <div class="mb-8">
+    <div class="container mx-auto p-6">
         <h2 class="text-2xl font-semibold text-blue-700 mb-4">Key Features</h2>
         <ul class="space-y-4">
             <li class="flex items-start">
@@ -74,7 +74,7 @@
         </ul>
     </div>
 
-    <div>
+    <div class="container mx-auto p-6">
         <h2 class="text-2xl font-semibold text-blue-700 mb-4">VAT Reports</h2>
         <ul class="list-disc list-inside text-lg text-gray-700">
             <li>Mushak 4.3 - Input-output Coefficient</li>
@@ -91,5 +91,42 @@
             <li>Mushak 9.1 - Return Submission</li>
         </ul>
     </div>
+    
+</div>
+
+<div class="container mx-auto p-6">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Management Information System (MIS) Reports</h2>
+    <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+        <li>Supplier Ledger Report</li>
+        <li>Customer Ledger Report</li>
+        <li>Raw Material Item Ledger Report</li>
+        <li>Finish Goods Item Ledger Report</li>
+        <li>Purchase Order Summary Report</li>
+        <li>Purchase Order Detail Report</li>
+        <li>Receive & Inspection Summary Report</li>
+        <li>Receive & Inspection Detail Report</li>
+        <li>Sales Order Summary Report by customer</li>
+        <li>Sales Order Detail Report</li>
+        <li>Work In Progress Summary Report</li>
+        <li>Work In Progress Detail Report</li>
+        <li>Finish Goods Summary Report</li>
+        <li>Finish Goods Detail Report</li>
+        <li>Product Delivery Summary Report</li>
+        <li>Product Delivery Detail Report</li>
+        <li>Wastage Raw Material Summary Report</li>
+        <li>Wastage Raw Material Detail Report</li>
+        <li>Wastage Finish Goods Summary Report</li>
+        <li>Wastage Finish Goods Detail Report</li>
+        <li>Scrap Sale Summary Report</li>
+        <li>Scrap Sale Detail Report</li>
+        <li>Item Return Summary Report</li>
+        <li>Item Return Detail Report</li>
+        <li>Work In Progress Return Summary Report</li>
+        <li>Work In Progress Return Detail Report</li>
+        <li>Supplier Return Summary Report</li>
+        <li>Supplier Return Detail Report</li>
+        <li>Supplier Ledger Detail Report</li>
+        <li>Customer Ledger Detail Report</li>
+    </ul>
 </div>
 @endsection
