@@ -40,7 +40,11 @@
                 Profile</a>
             <a href="{{ url('/portfolio') }}"
                 class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('portfolio') ? 'glow' : '' }}">Portfolio</a>
-            <a href="{{ url('/techStack') }}"
+          
+            <a href="{{ url('/clients') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('clients') ? 'glow' : '' }}">Clients</a>
+          
+                <a href="{{ url('/techStack') }}"
                 class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('techStack') ? 'glow' : '' }}">Tech
                 Stack</a>
         </nav>
@@ -90,7 +94,10 @@
                 Profile</a>
             <a href="{{ url('/portfolio') }}"
                 class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('portfolio') ? 'glow' : '' }}">Portfolio</a>
-            <a href="{{ url('/techStack') }}"
+                <a href="{{ url('/clients') }}"
+                class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('clients') ? 'glow' : '' }}">Clients</a>
+            
+                <a href="{{ url('/techStack') }}"
                 class="text-gray-600 hover:text-blue-500 transition duration-300 {{ Request::is('techStack') ? 'glow' : '' }}">Tech
                 Stack</a>
         </nav>

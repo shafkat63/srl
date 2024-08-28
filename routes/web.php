@@ -27,3 +27,6 @@ Route::get('/techStack', function () {
 Route::get('/products/vatfast', function () {
     return view('pages.products.vatfast');
 });
+Route::get('/clients', function () {
+    return view('pages.clients');
+});
