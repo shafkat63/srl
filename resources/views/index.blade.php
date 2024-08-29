@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Admin - @yield('title')</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
     @yield('style') <!-- For including page-specific styles -->
 </head>
