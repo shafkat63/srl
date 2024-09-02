@@ -1,4 +1,5 @@
 @extends('layout.app')
+@section('title', 'Vat Fast ')
 
 @section('mainContent')
 <div class="bg-gray-100 py-12 px-6">

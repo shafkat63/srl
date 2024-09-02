@@ -30,8 +30,10 @@
                 <!-- Dropdown Menu -->
                 <div class="absolute right-0 mt-2 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out transform scale-95 group-hover:scale-100 pointer-events-auto">
                     <a href="{{ url('/products/vatfast') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Vat Fast</a>
-                    <a href="{{ url('/products/2') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Product 2</a>
-                    <a href="{{ url('/products/3') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Product 3</a>
+                    <a href="{{ url('/products/sforce') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">sForce</a>
+                    <a href="{{ url('/products/ivvr') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">ivvr </a>
+                    <a href="{{ url('/products/mbill') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">mBill </a>
+                    <a href="{{ url('/products/payroll') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Payroll </a>
                 </div>
             </div>
 
@@ -84,8 +86,10 @@
                 <!-- Dropdown Menu -->
                 <div class="absolute right-0 mt-2 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out transform scale-95 group-hover:scale-100 pointer-events-auto">
                     <a href="{{ url('/products/vatfast') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Vat Fast</a>
-                    <a href="{{ url('/products/2') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Product 2</a>
-                    <a href="{{ url('/products/3') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Product 3</a>
+                    <a href="{{ url('/products/sforce') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">sForce</a>
+                    <a href="{{ url('/products/ivvr') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">ivvr</a>
+                    <a href="{{ url('/products/mbill') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">mBill</a>
+                    <a href="{{ url('/products/payroll') }}" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:underline transition duration-300">Payroll</a>
                 </div>
             </div>
 

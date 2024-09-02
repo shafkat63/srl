@@ -46,6 +46,10 @@ Route::view('/profile', 'pages.company_profile')->name('profile');
 Route::view('/portfolio', 'pages.portfolio')->name('portfolio');
 Route::view('/techStack', 'pages.technologyStacks')->name('techStack');
 Route::view('/products/vatfast', 'pages.products.vatfast')->name('products.vatfast');
+Route::view('/products/sforce', 'pages.products.sforce')->name('products.sforce');
+Route::view('/products/ivvr', 'pages.products.ivvr')->name('products.ivvr');
+Route::view('/products/mbill', 'pages.products.mbill')->name('products.mbill');
+Route::view('/products/payroll', 'pages.products.payRoll')->name('products.payroll');
 Route::view('/clients', 'pages.clients')->name('clients');
 
 // Contact Page
